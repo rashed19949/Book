@@ -1,0 +1,18 @@
+<div class="sidebar-menu" style=" margin-top: 70px; height: calc(100% - 70px); overflow-y: auto;">
+  
+
+    <ul>
+      <li *ngFor="let item of sidebarItems" >
+        <a [routerLink]="item.route" [routerLinkActive]="'active'">
+          <i class={{item.icon}}></i>
+          <span>{{item.label}}</span>
+        </a>
+      </li>
+      <li>
+        <a (click)="logout()" >
+          <i class="pi pi-sign-out"></i>
+          <span>Logout</span>
+        </a>
+      </li>
+    </ul>
+  </div>

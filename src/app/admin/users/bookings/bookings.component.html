@@ -1,0 +1,40 @@
+<div class="d-flex flex-column align-items-center">
+  <div class="col-11 mt-5">
+    <table class="table">
+      <thead class="backGround">
+        <tr>
+          <th class="col">#</th>
+          <th class="col">Name</th>
+          <th class="col">Email</th>
+          <th class="col">From Date</th>
+          <th class="col">From Time</th>
+          <th class="col">To Date</th>
+          <th class="col">To Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of bookingList; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ item.userName }}</td>
+          <td>{{ item.userEmail }}</td>
+          <td>
+            {{ item.fromDate | date : "fullDate" }}
+          </td>
+          <td>
+            {{ item.fromTime }}
+          </td>
+          <td>
+            {{ item.toDate | date : "fullDate" }}
+          </td>
+          <td>
+            {{ item.toTime }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div *ngIf="!bookingList?.length">
+      <p class="p-4 text-center">No result found</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,101 @@
+.login-container {
+  padding: 30px;
+  box-shadow: rgb(0 0 0 / 16%) 0 0.0625rem 0.25rem 0;
+  border-radius: 10px;
+  background: white;
+}
+
+.login-button {
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 24px;
+  gap: 4px;
+  width: 127px;
+  height: 54px;
+  background: rgb(0, 123, 255);
+  border-radius: 10px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.form-control {
+  height: 50px;
+  box-shadow: none;
+  caret-color: #007bff;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  box-shadow: 4px 4px 20px rgba(1, 149, 133, 0.15);
+  border: 1px solid #007bff;
+}
+
+.inputLabel {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 151.5%;
+  color: #121212;
+}
+
+.main-heading {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 151.5%;
+  color: #121212;
+}
+
+.d-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-danger {
+  color: red;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-toggle img {
+  width: 25px;
+  height: 25px;
+}
+
+.position {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.alert-danger {
+  background-color: red;
+  color: white;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+}

@@ -1,0 +1,52 @@
+<div class="d-flex flex-column align-items-center">
+  <div class="col-11 mt-5">
+    <div class="col-md-3 col-sm-4 col-6">
+      <button class="create-button w-100 h-100" (click)="onCreate()">
+        Create User
+      </button>
+    </div>
+  </div>
+  <div class="col-11 mt-2">
+    <div class="col-md-3 col-sm-4 col-6">
+      <mat-form-field appearance="outline">
+        <mat-label>Search </mat-label>
+        <input matInput placeholder="Search for record" [(ngModel)]="searchValue" (input)="searchFilter($event)">
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="col-11 mt-2">
+    <table class="table">
+      <thead class="backGround">
+        <tr>
+          <th class="col">#</th>
+          <th class="col">Name</th>
+          <th class="col">Email</th>
+          <th class="col">Boookings</th>
+          <th class="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of usersListFiltered; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ item.displayName }}</td>
+          <td>{{ item.email }}</td>
+          <td>
+            <button class="view_button" (click)="viewBookings(item.uid)">
+              View Bookings
+            </button>
+          </td>
+          <td>
+            <button class="view_button" (click)="disableUser(item.uid)">
+              Delete User
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div *ngIf="!usersList?.length">
+      <p class="p-4 text-center">No result found</p>
+    </div>
+  </div>
+</div>

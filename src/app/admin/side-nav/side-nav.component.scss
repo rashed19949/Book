@@ -1,0 +1,61 @@
+.sidebar-menu {
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 0;
+  position: fixed;
+  transition: all 0.2s ease-in-out 0s;
+  width: 225px;
+  z-index: 1001;
+  box-shadow: 0 4px 4px #eef1fe;
+  overflow-y: hidden;
+  padding: 20px 0;
+
+  ul {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+   
+    li {
+      margin-bottom: 3px;
+
+      a {
+        align-items: center;
+        font-family: "Plus Jakarta Sans";
+        font-weight: 500;
+        display: flex;
+        display: -ms-flexbox;
+        justify-content: flex-start;
+        padding: 8px 15px;
+        position: relative;
+        transition: all 0.2s ease-in-out 0s;
+        cursor: pointer;
+        text-decoration: none;
+
+        i,
+        span {
+          color: #2e3842 !important;
+          transition: all 0.2s ease-in-out 0s;
+        }
+
+        span {
+          margin-left: 20px;
+        }
+      }
+      &:hover {
+        background-color: lightblue;
+        border-radius: 10px;
+      }
+      
+      a.active {
+        i,
+        span {
+          color: #007bff !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.content-wrapper {
+    position: fixed;
+    left: 200px;
+    padding: 20px 20px;
+    width: calc(100% - 200px);
+    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
+    @media only screen and (max-width: 767px) {
+      left: 0;
+      width: calc(100%);
+    }
+  }
+  :host ::ng-deep .p-toolbar {
+    background-color: white;
+    margin-top: 1%;
+    height: 50px;
+    border: none;
+  }
+  
+  .arrow-up {
+    left: 45%;
+  }
+  
+  .right-container.hide {
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  h1 {
+    font-family: Maecenas-UltraBoldItalic, serif;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 800;
+  }
+  
+  .show {
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    // right: 20px;
+    // top: 25px;
+    scroll-behavior: smooth;
+  }
+  
+  .hide {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+    scroll-behavior: smooth;
+  }
+  
+  .fortcel-mig-mere-container {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // @media (min-width: 992px) {
+  //   .mobile-nav-container {
+  //    background-color: orange;
+  //   }
+  // }
+  
+  // @media (max-width: 992px) {
+  //   .mobile-nav-container {
+  //     display: block !important;
+  //   }
+  // }
+  

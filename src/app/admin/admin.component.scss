@@ -1,0 +1,136 @@
+// ADMIN SCSS
+.backGround {
+  background-color: #007bff;
+  color: white;
+  font-size: 17px;
+  height: 50px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.create-button {
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 24px;
+  gap: 4px;
+  max-width: 200px;
+  height: 54px;
+  background: #007bff;
+  border-radius: 10px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.view_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  border: none;
+  min-height: 45px;
+  background: #007bff;
+  border-radius: 10px;
+  color: white;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  max-width: 160px;
+  min-width: 130px;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.login-container {
+  padding: 30px;
+  box-shadow: rgb(0 0 0 / 16%) 0 0.0625rem 0.25rem 0;
+  border-radius: 10px;
+  background: white;
+}
+
+.login-button {
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 24px;
+  gap: 4px;
+  width: 127px;
+  height: 54px;
+  background: #007bff;
+  border-radius: 10px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.form-control,
+.form-select {
+  height: 50px;
+  box-shadow: none;
+  caret-color: #007bff;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 4px 4px 20px rgba(1, 149, 133, 0.15);
+  border: 1px solid #007bff;
+}
+
+.main-heading {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 151.5%;
+  color: #121212;
+}
+.d-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-danger {
+  background-color: red;
+  color: white;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+a {
+  img {
+    cursor: pointer;
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+td {
+  vertical-align: middle;
+}

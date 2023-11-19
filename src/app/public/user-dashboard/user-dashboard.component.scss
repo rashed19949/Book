@@ -1,0 +1,28 @@
+.act-btn{
+    display: flex;
+    justify-content: space-around;
+    .edit-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 11px 22px;
+        height: 35px;
+        background: #1c800d;
+        font-size: 16px;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+      }
+      .delete-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 11px 22px;
+        height: 35px;
+        background: red;
+        font-size: 16px;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+      }
+}

@@ -1,0 +1,7 @@
+<div class="d-flex flex-column">
+  <app-header></app-header>
+  <div class="d-flex flex-row">
+    <div class="sidenav"><app-side-nav></app-side-nav></div>
+    <div class="content" style="margin-top: 70px;" [ngClass]="{ 'open': !sidebarStatus }"><router-outlet></router-outlet></div>
+  </div>
+</div>
